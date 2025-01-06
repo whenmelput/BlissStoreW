@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhenMelPut Store</title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+<body>
+    <header>
+        <h1>𝙰𝚞𝚛𝚘𝚛𝚊 𝙱𝚕𝚒𝚜𝚜 𝚂𝚝𝚘𝚛𝚎</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Bagian Cover -->
+        <section id="cover" class="cover">
+            <div class="cover-content">
+                <img src="Website Penjualan/Screenshot 2024-12-11 165134.png" class="cover-image">
+                <h2>Selamat Datang di Toko Kami!</h2>
+                <p>Temukan berbagai aksesoris menarik dan lucu untuk melengkapi gaya Anda.</p>
+                <a href="#products" class="btn">Lihat Produk</a>
+            </div>
+        </section>
+
+        <section id="products">
+            <h2>Produk</h2>
+            <div class="Mini Portable" id="Mini Portable">
+                <img src="Website Penjualan/AP238 Outdoor Mini Portable Handheld USB Fan Night Light(Yellow) (1).jpg" alt="Mini Portable">
+                <h3>Mini Portable</h3>
+                <p>kipas angin berukuran kecil yang dapat digenggam, sangat praktis.</p>
+                <p>Harga: Rp 30.000</p>
+                <button onclick="addToCart('Produk 1', 100000)">Beli</button>
+            </div>
+            <div class="Case HP" id="Case HP">
+                <img src="Website Penjualan/Candy Butterfly iPhone Case With Chain (1).jpg" alt="Case HP">
+                <h3>Case HP</h3>
+                <p>Case HP Cute, tersedia berbagai macam tipe HP.</p>
+                <p>Harga: Rp 50.000</p>
+                <button onclick="addToCart('Produk 2', 15000)">Beli</button>
+            </div>
+            <div class="Jam Tangan Cute" id="Jam Tangan Lucu">
+                <img src="Website Penjualan/Gelang cute (1).jpg" alt="Jam Tangan Cute">
+                <h3>Jam Tangan Cute</h3>
+                <p>Jam tangan Mahasiswa Yang Imut Dan Lucu watch Perermpuan</p>
+                <p>Harga: Rp 35.000</p>
+                <button onclick="addToCart('Produk 3', 35000)">Beli</button>
+            </div>
+            <div class="Tas Selempang Mini Cute" id="Tas Selempang Mini Lucu">
+                <img src="Website Penjualan/Tas Selempang.jpg" alt="Tas Selempang Mini Cute">
+                <h3>Tas Selempang Mini Cute</h3>
+                <p>Tas berukuran kecil yang memiliki tali panjang untuk digantung di bahu dan diletakkan di sisi tubuh yang berlawanan.</p>
+                <p>Harga: Rp 70.000</p>
+                <button onclick="addToCart('Produk 4', 70000)">Beli</button>
+            </div>
+            <div class="Anting Anting" id="Anting Anting">
+                <img src="Website Penjualan/Anting.jpg" alt="Anting Anting">
+                <h3>Anting Anting</h3>
+                <p>Bahan anting-anting, seperti logam, plastik, kaca, batu mulia, manik-manik, teflon, atau akrilik</p>
+                <p>Harga: Rp 10.000</p>
+                <button onclick="addToCart('Produk 5', 10000)">Beli</button>
+            </div>
+            <div class="Bando" id="Bando">
+                <img src="Website Penjualan/download (2).jpg" alt="Bando">
+                <h3>Bando</h3>
+                <p>Aksesori rambut yang dikenakan di kepala atau dahi untuk menahan rambut agar tidak menghalangi wajah</p>
+                <p>Harga: Rp 15.000</p>
+                <button onclick="addToCart('Produk 6', 15000)">Beli</button>
+            </div>
+            <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
+        </section>
+
+        <section id="cart">
+            <h2>Keranjang Belanja</h2>
+            <ul id="cartItems"></ul>
+            <p id="totalPrice">Total: Rp 0</p>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Aurora Bliss Store Whendi Amelia Putri.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
